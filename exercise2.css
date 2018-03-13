@@ -5,4 +5,7 @@
         }
 h1{color: red;}
 
-{background-color: black;}
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
