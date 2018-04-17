@@ -3,7 +3,6 @@ background-color:black;
 h1 {color: blue;
 margin-left: 10px;}
 #vmap {margin: 0 auto;}
-
         ul.nav li{
             display: inline-block;
             padding-right: 10px;
@@ -19,3 +18,5 @@ ol {
   p{color: grey; text-align: center;}
 
 }
+
+h1{color: red;}
