@@ -1,11 +1,21 @@
+background-color:black;
+}
+h1 {color: blue;
+margin-left: 10px;}
+#vmap {margin: 0 auto;}
 
         ul.nav li{
             display: inline-block;
             padding-right: 10px;
         }
-h1{color: red;}
+h1{color: orange; text-align: center;}
+
+
 
 ol {
-    background: #ff9999;
+    background: #black;
     padding: 20px;
+}
+  p{color: grey; text-align: center;}
+
 }

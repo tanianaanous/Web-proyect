@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    background-color: linen;
-}
-h1 {
-    color: maroon;
-    margin-left: 40px;
-}
-</style>
+
+   <link rel="stylesheet" type="text/css" href="exercise2.css">
+   <link href="css/map.css" media="screen" rel="stylesheet" type="text/css"/>
+
+
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="js/map.js" charset="utf-8"></script>
+      <script type="text/javascript" src="js/europemap.js" charset="utf-8"></script>
+
+      <script>
+            jQuery(document).ready(function () {
+              jQuery('#vmap').vectorMap({
+                map: 'europe_en',
+                enableZoom: false,
+                showTooltip: true,
+                onResize: function (element, width, height) {
+                           console.log('Map Size: ' +  width + 'x' +  height);
+                         },
+                         onRegionClick: function(element, code, region)
+   {
+      window.location = code+".html";
+   }
+
+              });
+            });
+          </script>
+
 </head>
 <body>
 
-<h1>To my love</h1>
-<p>Sé que me porte horrible, estaba teniendo como una crisis de dificultad del tiempo que vamos a estar lejos y de lo difícil que va a ser no tenerte, pero te amo y espero que podamos estar juntos mucho tiempo más, I'm sorry for pushing you away and being a bish. </p>
+<h1>Matilda partying in Europe</h1>
+<p>Your favorite GIGS, in one place! Don't miss it</p>
+<div id="vmap" style="width: 680px; height: 520px;"></div>
 
 </body>
+
 </html>
